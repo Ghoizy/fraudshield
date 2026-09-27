@@ -7,6 +7,15 @@ data_path = project_root / "data" / "raw" / "2018-04-01.pkl"
 
 df = pd.read_pickle(data_path)
 
+tipe_kolom = {
+    "CUSTOMER_ID": "int64",
+    "TERMINAL_ID": "int64",
+    "TX_TIME_SECONDS": "int64",
+    "TX_TIME_DAYS": "int64",
+}
+
+df = df.astype(tipe_kolom)
+
 # Simpan jawaban acuan secara terpisah
 y = df["TX_FRAUD"].copy()
 
@@ -66,3 +75,17 @@ kolom_diperiksa = [
 for nama_kolom in kolom_diperiksa:
     print(f"\nKolom: {nama_kolom}")
     print(df[nama_kolom].map(type).value_counts())
+
+print("\nTIPE PENYIMPANAN SETELAH DIRAPIKAN")
+print(df[list(tipe_kolom)].dtypes)
+
+print("\nPERSENTASE TRANSAKSI FRAUD")
+
+jumlah_transaksi = len(df)
+jumlah_fraud = (df["TX_FRAUD"] == 1).sum()
+persentase_fraud = jumlah_fraud / jumlah_transaksi * 100
+
+print(f"Total transaksi: {jumlah_transaksi}")
+print(f"Jumlah fraud: {jumlah_fraud}")
+print(f"Persentase fraud: {persentase_fraud:.4f}%")
+
