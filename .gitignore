@@ -1,0 +1,20 @@
+# Python environment
+.venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Generated data and trained models
+/data/
+/models/
+
+# Local editor settings
+.vscode/
