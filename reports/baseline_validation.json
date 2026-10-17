@@ -1,0 +1,109 @@
+{
+  "evaluation_data": "validation",
+  "jumlah_transaksi": 57792,
+  "jumlah_fraud": 459,
+  "fitur": [
+    "TX_AMOUNT",
+    "TX_HOUR",
+    "TX_IS_WEEKEND"
+  ],
+  "sklearn_version": "1.7.2",
+  "hasil_model": {
+    "DUMMY": {
+      "threshold": 0.5,
+      "accuracy": 0.9920577242524917,
+      "precision": 0.0,
+      "recall": 0.0,
+      "average_precision": 0.007942275747508306,
+      "transaksi_ditandai": 0,
+      "tn": 57333,
+      "fp": 0,
+      "fn": 459,
+      "tp": 0
+    },
+    "LOGISTIC REGRESSION": {
+      "threshold": 0.5,
+      "accuracy": 0.9931824473975637,
+      "precision": 1.0,
+      "recall": 0.14161220043572983,
+      "average_precision": 0.27204603820502304,
+      "transaksi_ditandai": 65,
+      "tn": 57333,
+      "fp": 0,
+      "fn": 394,
+      "tp": 65
+    }
+  },
+  "perbandingan_threshold_logistic": [
+    {
+      "threshold": 0.5,
+      "precision": 1.0,
+      "recall": 0.14161220043572983,
+      "transaksi_ditandai": 65,
+      "persentase_ditandai": 0.11247231450719822,
+      "fraud_tertangkap": 65,
+      "normal_ikut_ditandai": 0,
+      "fraud_lolos": 394
+    },
+    {
+      "threshold": 0.2,
+      "precision": 1.0,
+      "recall": 0.1895424836601307,
+      "transaksi_ditandai": 87,
+      "persentase_ditandai": 0.15053986710963457,
+      "fraud_tertangkap": 87,
+      "normal_ikut_ditandai": 0,
+      "fraud_lolos": 372
+    },
+    {
+      "threshold": 0.1,
+      "precision": 0.7832167832167832,
+      "recall": 0.2440087145969499,
+      "transaksi_ditandai": 143,
+      "persentase_ditandai": 0.2474390919158361,
+      "fraud_tertangkap": 112,
+      "normal_ikut_ditandai": 31,
+      "fraud_lolos": 347
+    },
+    {
+      "threshold": 0.05,
+      "precision": 0.3161953727506427,
+      "recall": 0.2679738562091503,
+      "transaksi_ditandai": 389,
+      "persentase_ditandai": 0.6731035437430787,
+      "fraud_tertangkap": 123,
+      "normal_ikut_ditandai": 266,
+      "fraud_lolos": 336
+    },
+    {
+      "threshold": 0.02,
+      "precision": 0.08706624605678233,
+      "recall": 0.3006535947712418,
+      "transaksi_ditandai": 1585,
+      "persentase_ditandai": 2.742594130675526,
+      "fraud_tertangkap": 138,
+      "normal_ikut_ditandai": 1447,
+      "fraud_lolos": 321
+    },
+    {
+      "threshold": 0.01,
+      "precision": 0.03902439024390244,
+      "recall": 0.3485838779956427,
+      "transaksi_ditandai": 4100,
+      "persentase_ditandai": 7.094407530454042,
+      "fraud_tertangkap": 160,
+      "normal_ikut_ditandai": 3940,
+      "fraud_lolos": 299
+    },
+    {
+      "threshold": 0.005,
+      "precision": 0.02138392367584165,
+      "recall": 0.42483660130718953,
+      "transaksi_ditandai": 9119,
+      "persentase_ditandai": 15.779000553709857,
+      "fraud_tertangkap": 195,
+      "normal_ikut_ditandai": 8924,
+      "fraud_lolos": 264
+    }
+  ]
+}

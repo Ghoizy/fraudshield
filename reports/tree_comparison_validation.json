@@ -1,0 +1,199 @@
+{
+  "evaluation_data": "validation",
+  "jumlah_transaksi": 57792,
+  "jumlah_fraud": 459,
+  "fitur": [
+    "TX_AMOUNT",
+    "TX_HOUR",
+    "TX_IS_WEEKEND"
+  ],
+  "sklearn_version": "1.7.2",
+  "parameter_tree": {
+    "max_depth": 5,
+    "min_samples_leaf": 50,
+    "random_state": 42
+  },
+  "kapasitas_per_hari": 100,
+  "hasil_ap": [
+    {
+      "model": "LOGISTIC",
+      "ap_train": 0.39190605679347573,
+      "ap_validation": 0.27204603820502304
+    },
+    {
+      "model": "TREE",
+      "ap_train": 0.39328717282031017,
+      "ap_validation": 0.26569993628450883
+    }
+  ],
+  "hasil_threshold": [
+    {
+      "model": "LOGISTIC",
+      "threshold": 0.5,
+      "precision": 1.0,
+      "recall": 0.14161220043572983,
+      "fraud_tertangkap": 65,
+      "normal_ikut_ditandai": 0,
+      "fraud_lolos": 394,
+      "total_review": 65,
+      "review_harian_tertinggi": 17,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "model": "LOGISTIC",
+      "threshold": 0.2,
+      "precision": 1.0,
+      "recall": 0.1895424836601307,
+      "fraud_tertangkap": 87,
+      "normal_ikut_ditandai": 0,
+      "fraud_lolos": 372,
+      "total_review": 87,
+      "review_harian_tertinggi": 20,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "model": "LOGISTIC",
+      "threshold": 0.1,
+      "precision": 0.7832167832167832,
+      "recall": 0.2440087145969499,
+      "fraud_tertangkap": 112,
+      "normal_ikut_ditandai": 31,
+      "fraud_lolos": 347,
+      "total_review": 143,
+      "review_harian_tertinggi": 32,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "model": "LOGISTIC",
+      "threshold": 0.05,
+      "precision": 0.3161953727506427,
+      "recall": 0.2679738562091503,
+      "fraud_tertangkap": 123,
+      "normal_ikut_ditandai": 266,
+      "fraud_lolos": 336,
+      "total_review": 389,
+      "review_harian_tertinggi": 71,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "model": "LOGISTIC",
+      "threshold": 0.02,
+      "precision": 0.08706624605678233,
+      "recall": 0.3006535947712418,
+      "fraud_tertangkap": 138,
+      "normal_ikut_ditandai": 1447,
+      "fraud_lolos": 321,
+      "total_review": 1585,
+      "review_harian_tertinggi": 299,
+      "hari_melebihi_kapasitas": 6
+    },
+    {
+      "model": "LOGISTIC",
+      "threshold": 0.01,
+      "precision": 0.03902439024390244,
+      "recall": 0.3485838779956427,
+      "fraud_tertangkap": 160,
+      "normal_ikut_ditandai": 3940,
+      "fraud_lolos": 299,
+      "total_review": 4100,
+      "review_harian_tertinggi": 723,
+      "hari_melebihi_kapasitas": 6
+    },
+    {
+      "model": "LOGISTIC",
+      "threshold": 0.005,
+      "precision": 0.02138392367584165,
+      "recall": 0.42483660130718953,
+      "fraud_tertangkap": 195,
+      "normal_ikut_ditandai": 8924,
+      "fraud_lolos": 264,
+      "total_review": 9119,
+      "review_harian_tertinggi": 1619,
+      "hari_melebihi_kapasitas": 6
+    },
+    {
+      "model": "TREE",
+      "threshold": 0.5,
+      "precision": 1.0,
+      "recall": 0.24183006535947713,
+      "fraud_tertangkap": 111,
+      "normal_ikut_ditandai": 0,
+      "fraud_lolos": 348,
+      "total_review": 111,
+      "review_harian_tertinggi": 24,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "model": "TREE",
+      "threshold": 0.2,
+      "precision": 1.0,
+      "recall": 0.24183006535947713,
+      "fraud_tertangkap": 111,
+      "normal_ikut_ditandai": 0,
+      "fraud_lolos": 348,
+      "total_review": 111,
+      "review_harian_tertinggi": 24,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "model": "TREE",
+      "threshold": 0.1,
+      "precision": 0.773972602739726,
+      "recall": 0.24618736383442266,
+      "fraud_tertangkap": 113,
+      "normal_ikut_ditandai": 33,
+      "fraud_lolos": 346,
+      "total_review": 146,
+      "review_harian_tertinggi": 32,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "model": "TREE",
+      "threshold": 0.05,
+      "precision": 0.5571428571428572,
+      "recall": 0.2549019607843137,
+      "fraud_tertangkap": 117,
+      "normal_ikut_ditandai": 93,
+      "fraud_lolos": 342,
+      "total_review": 210,
+      "review_harian_tertinggi": 46,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "model": "TREE",
+      "threshold": 0.02,
+      "precision": 0.4854771784232365,
+      "recall": 0.2549019607843137,
+      "fraud_tertangkap": 117,
+      "normal_ikut_ditandai": 124,
+      "fraud_lolos": 342,
+      "total_review": 241,
+      "review_harian_tertinggi": 52,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "model": "TREE",
+      "threshold": 0.01,
+      "precision": 0.13997879109225875,
+      "recall": 0.2875816993464052,
+      "fraud_tertangkap": 132,
+      "normal_ikut_ditandai": 811,
+      "fraud_lolos": 327,
+      "total_review": 943,
+      "review_harian_tertinggi": 171,
+      "hari_melebihi_kapasitas": 6
+    },
+    {
+      "model": "TREE",
+      "threshold": 0.005,
+      "precision": 0.11949685534591195,
+      "recall": 0.289760348583878,
+      "fraud_tertangkap": 133,
+      "normal_ikut_ditandai": 980,
+      "fraud_lolos": 326,
+      "total_review": 1113,
+      "review_harian_tertinggi": 201,
+      "hari_melebihi_kapasitas": 6
+    }
+  ]
+}

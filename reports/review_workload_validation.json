@@ -1,0 +1,380 @@
+{
+  "evaluation_data": "validation",
+  "kapasitas_per_hari": 100,
+  "jumlah_hari": 6,
+  "ringkasan_threshold": [
+    {
+      "threshold": 0.5,
+      "precision": 1.0,
+      "recall": 0.14161220043572983,
+      "fraud_tertangkap": 65,
+      "normal_ikut_ditandai": 0,
+      "fraud_lolos": 394,
+      "total_review": 65,
+      "review_harian_tertinggi": 17,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "threshold": 0.2,
+      "precision": 1.0,
+      "recall": 0.1895424836601307,
+      "fraud_tertangkap": 87,
+      "normal_ikut_ditandai": 0,
+      "fraud_lolos": 372,
+      "total_review": 87,
+      "review_harian_tertinggi": 20,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "threshold": 0.1,
+      "precision": 0.7832167832167832,
+      "recall": 0.2440087145969499,
+      "fraud_tertangkap": 112,
+      "normal_ikut_ditandai": 31,
+      "fraud_lolos": 347,
+      "total_review": 143,
+      "review_harian_tertinggi": 32,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "threshold": 0.05,
+      "precision": 0.3161953727506427,
+      "recall": 0.2679738562091503,
+      "fraud_tertangkap": 123,
+      "normal_ikut_ditandai": 266,
+      "fraud_lolos": 336,
+      "total_review": 389,
+      "review_harian_tertinggi": 71,
+      "hari_melebihi_kapasitas": 0
+    },
+    {
+      "threshold": 0.02,
+      "precision": 0.08706624605678233,
+      "recall": 0.3006535947712418,
+      "fraud_tertangkap": 138,
+      "normal_ikut_ditandai": 1447,
+      "fraud_lolos": 321,
+      "total_review": 1585,
+      "review_harian_tertinggi": 299,
+      "hari_melebihi_kapasitas": 6
+    },
+    {
+      "threshold": 0.01,
+      "precision": 0.03902439024390244,
+      "recall": 0.3485838779956427,
+      "fraud_tertangkap": 160,
+      "normal_ikut_ditandai": 3940,
+      "fraud_lolos": 299,
+      "total_review": 4100,
+      "review_harian_tertinggi": 723,
+      "hari_melebihi_kapasitas": 6
+    },
+    {
+      "threshold": 0.005,
+      "precision": 0.02138392367584165,
+      "recall": 0.42483660130718953,
+      "fraud_tertangkap": 195,
+      "normal_ikut_ditandai": 8924,
+      "fraud_lolos": 264,
+      "total_review": 9119,
+      "review_harian_tertinggi": 1619,
+      "hari_melebihi_kapasitas": 6
+    }
+  ],
+  "detail_harian": [
+    {
+      "threshold": 0.5,
+      "tanggal": "2018-04-19",
+      "jumlah_transaksi": 9539,
+      "kandidat_review": 11,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.5,
+      "tanggal": "2018-04-20",
+      "jumlah_transaksi": 9569,
+      "kandidat_review": 8,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.5,
+      "tanggal": "2018-04-21",
+      "jumlah_transaksi": 9645,
+      "kandidat_review": 7,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.5,
+      "tanggal": "2018-04-22",
+      "jumlah_transaksi": 9747,
+      "kandidat_review": 13,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.5,
+      "tanggal": "2018-04-23",
+      "jumlah_transaksi": 9744,
+      "kandidat_review": 17,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.5,
+      "tanggal": "2018-04-24",
+      "jumlah_transaksi": 9548,
+      "kandidat_review": 9,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.2,
+      "tanggal": "2018-04-19",
+      "jumlah_transaksi": 9539,
+      "kandidat_review": 17,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.2,
+      "tanggal": "2018-04-20",
+      "jumlah_transaksi": 9569,
+      "kandidat_review": 10,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.2,
+      "tanggal": "2018-04-21",
+      "jumlah_transaksi": 9645,
+      "kandidat_review": 11,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.2,
+      "tanggal": "2018-04-22",
+      "jumlah_transaksi": 9747,
+      "kandidat_review": 14,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.2,
+      "tanggal": "2018-04-23",
+      "jumlah_transaksi": 9744,
+      "kandidat_review": 20,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.2,
+      "tanggal": "2018-04-24",
+      "jumlah_transaksi": 9548,
+      "kandidat_review": 15,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.1,
+      "tanggal": "2018-04-19",
+      "jumlah_transaksi": 9539,
+      "kandidat_review": 26,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.1,
+      "tanggal": "2018-04-20",
+      "jumlah_transaksi": 9569,
+      "kandidat_review": 19,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.1,
+      "tanggal": "2018-04-21",
+      "jumlah_transaksi": 9645,
+      "kandidat_review": 23,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.1,
+      "tanggal": "2018-04-22",
+      "jumlah_transaksi": 9747,
+      "kandidat_review": 20,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.1,
+      "tanggal": "2018-04-23",
+      "jumlah_transaksi": 9744,
+      "kandidat_review": 32,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.1,
+      "tanggal": "2018-04-24",
+      "jumlah_transaksi": 9548,
+      "kandidat_review": 23,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.05,
+      "tanggal": "2018-04-19",
+      "jumlah_transaksi": 9539,
+      "kandidat_review": 69,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.05,
+      "tanggal": "2018-04-20",
+      "jumlah_transaksi": 9569,
+      "kandidat_review": 71,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.05,
+      "tanggal": "2018-04-21",
+      "jumlah_transaksi": 9645,
+      "kandidat_review": 54,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.05,
+      "tanggal": "2018-04-22",
+      "jumlah_transaksi": 9747,
+      "kandidat_review": 57,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.05,
+      "tanggal": "2018-04-23",
+      "jumlah_transaksi": 9744,
+      "kandidat_review": 70,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.05,
+      "tanggal": "2018-04-24",
+      "jumlah_transaksi": 9548,
+      "kandidat_review": 68,
+      "melebihi_kapasitas": false
+    },
+    {
+      "threshold": 0.02,
+      "tanggal": "2018-04-19",
+      "jumlah_transaksi": 9539,
+      "kandidat_review": 262,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.02,
+      "tanggal": "2018-04-20",
+      "jumlah_transaksi": 9569,
+      "kandidat_review": 275,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.02,
+      "tanggal": "2018-04-21",
+      "jumlah_transaksi": 9645,
+      "kandidat_review": 221,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.02,
+      "tanggal": "2018-04-22",
+      "jumlah_transaksi": 9747,
+      "kandidat_review": 251,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.02,
+      "tanggal": "2018-04-23",
+      "jumlah_transaksi": 9744,
+      "kandidat_review": 299,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.02,
+      "tanggal": "2018-04-24",
+      "jumlah_transaksi": 9548,
+      "kandidat_review": 277,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.01,
+      "tanggal": "2018-04-19",
+      "jumlah_transaksi": 9539,
+      "kandidat_review": 690,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.01,
+      "tanggal": "2018-04-20",
+      "jumlah_transaksi": 9569,
+      "kandidat_review": 673,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.01,
+      "tanggal": "2018-04-21",
+      "jumlah_transaksi": 9645,
+      "kandidat_review": 637,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.01,
+      "tanggal": "2018-04-22",
+      "jumlah_transaksi": 9747,
+      "kandidat_review": 686,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.01,
+      "tanggal": "2018-04-23",
+      "jumlah_transaksi": 9744,
+      "kandidat_review": 723,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.01,
+      "tanggal": "2018-04-24",
+      "jumlah_transaksi": 9548,
+      "kandidat_review": 691,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.005,
+      "tanggal": "2018-04-19",
+      "jumlah_transaksi": 9539,
+      "kandidat_review": 1516,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.005,
+      "tanggal": "2018-04-20",
+      "jumlah_transaksi": 9569,
+      "kandidat_review": 1529,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.005,
+      "tanggal": "2018-04-21",
+      "jumlah_transaksi": 9645,
+      "kandidat_review": 1479,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.005,
+      "tanggal": "2018-04-22",
+      "jumlah_transaksi": 9747,
+      "kandidat_review": 1496,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.005,
+      "tanggal": "2018-04-23",
+      "jumlah_transaksi": 9744,
+      "kandidat_review": 1619,
+      "melebihi_kapasitas": true
+    },
+    {
+      "threshold": 0.005,
+      "tanggal": "2018-04-24",
+      "jumlah_transaksi": 9548,
+      "kandidat_review": 1480,
+      "melebihi_kapasitas": true
+    }
+  ]
+}
