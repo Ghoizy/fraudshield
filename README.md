@@ -277,6 +277,7 @@ It does not guarantee identical behavior across operating systems.
 - [Model card](docs/model_card.md)
 - [Operating guide](docs/runbook.md)
 - [Validation model comparison](reports/history_v1/model_comparison_validation.json)
+- [System architecture](docs/architecture.md)
 
 ## Limitations and Remaining Work
 
