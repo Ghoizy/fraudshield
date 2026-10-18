@@ -377,3 +377,31 @@ HTTP dependency was observed. It did not fail the test run.
 These results verify the tested behavior in the local rebuild
 environment. They do not establish production readiness or
 cross-platform reproducibility.
+
+## Upstream dataset source
+
+FraudShield uses synthetic transaction data from the
+Fraud Detection Handbook.
+
+Simulator documentation:
+https://fraud-detection-handbook.github.io/fraud-detection-handbook/Chapter_3_GettingStarted/SimulatedDataset.html
+
+Dataset repository:
+https://github.com/Fraud-Detection-Handbook/simulated-data-raw
+
+This experiment uses 30 daily files, from 2018-04-01.pkl
+through 2018-04-30.pkl, stored locally in data/raw/.
+
+All 30 local raw files were verified against upstream commit
+`6e67dbd0a3bfe0d7ec33abc4bce5f37cd4ff0d6a`.
+
+Verification results:
+- Files checked: 30.
+- Matching SHA-256 hashes: 30.
+- Different files: 0.
+
+This confirms byte-for-byte agreement between the local raw
+files and the upstream files at the recorded commit.
+
+Evidence:
+[Dataset source verification](../reports/dataset_source_verification.json)

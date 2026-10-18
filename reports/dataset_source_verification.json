@@ -1,0 +1,190 @@
+﻿{
+    "checked_at_utc":  "2026-10-18T22:56:00.3655846Z",
+    "source_repository":  "https://github.com/Fraud-Detection-Handbook/simulated-data-raw",
+    "source_commit":  "6e67dbd0a3bfe0d7ec33abc4bce5f37cd4ff0d6a",
+    "checked_files":  30,
+    "matching_files":  30,
+    "different_files":  0,
+    "files":  [
+                  {
+                      "file":  "2018-04-01.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "6BB3398E858BE68532E22522ED8DD52601FE507B6537F6BC2DDE0ABCDD3E4717",
+                      "sha256_sumber":  "6BB3398E858BE68532E22522ED8DD52601FE507B6537F6BC2DDE0ABCDD3E4717"
+                  },
+                  {
+                      "file":  "2018-04-02.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "69266B74F810840C6A7649A2BD35EF08B5BCE0501919FE1F8A05810A173790C8",
+                      "sha256_sumber":  "69266B74F810840C6A7649A2BD35EF08B5BCE0501919FE1F8A05810A173790C8"
+                  },
+                  {
+                      "file":  "2018-04-03.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "1C4D08A002B61ADA9529C5FE6BF2A493F29C902B70FA9F59FB70B5ECCEF23AE8",
+                      "sha256_sumber":  "1C4D08A002B61ADA9529C5FE6BF2A493F29C902B70FA9F59FB70B5ECCEF23AE8"
+                  },
+                  {
+                      "file":  "2018-04-04.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "03F1F3F3CF2BA96ECDD6DF95194C1446CA5ADD2B0213F5ACBE183427CD455BA3",
+                      "sha256_sumber":  "03F1F3F3CF2BA96ECDD6DF95194C1446CA5ADD2B0213F5ACBE183427CD455BA3"
+                  },
+                  {
+                      "file":  "2018-04-05.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "7DEE3A41BD5B2FE2590C7D83C528F556DC79286E54D623DC0AB1577E2274F647",
+                      "sha256_sumber":  "7DEE3A41BD5B2FE2590C7D83C528F556DC79286E54D623DC0AB1577E2274F647"
+                  },
+                  {
+                      "file":  "2018-04-06.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "1ABA6F2AEDC9FD1988CB6B832BF01B40C3930B5A6761B5AA82CFD95B5860DA4F",
+                      "sha256_sumber":  "1ABA6F2AEDC9FD1988CB6B832BF01B40C3930B5A6761B5AA82CFD95B5860DA4F"
+                  },
+                  {
+                      "file":  "2018-04-07.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "396901E31F1037F4472899559BB4A4D6039DBA321B682F7D26206478C3809DD9",
+                      "sha256_sumber":  "396901E31F1037F4472899559BB4A4D6039DBA321B682F7D26206478C3809DD9"
+                  },
+                  {
+                      "file":  "2018-04-08.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "A589E0C224B9CEFC99336341567D84E68A85C41C7108E4FDED51A5C3DE32F049",
+                      "sha256_sumber":  "A589E0C224B9CEFC99336341567D84E68A85C41C7108E4FDED51A5C3DE32F049"
+                  },
+                  {
+                      "file":  "2018-04-09.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "05F044777611714CE1B7B2245712E54FB7B155F03E2503D686B487060D1E9063",
+                      "sha256_sumber":  "05F044777611714CE1B7B2245712E54FB7B155F03E2503D686B487060D1E9063"
+                  },
+                  {
+                      "file":  "2018-04-10.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "985E93B53AB12A924FF74C99E5FF9A4FDAD716299CC05BAF9EDC62717A2D89D8",
+                      "sha256_sumber":  "985E93B53AB12A924FF74C99E5FF9A4FDAD716299CC05BAF9EDC62717A2D89D8"
+                  },
+                  {
+                      "file":  "2018-04-11.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "FD07E14B8005EE651F4846FF0D2AB4ECFF7D1B68BC367D5E855D24D37E1BC022",
+                      "sha256_sumber":  "FD07E14B8005EE651F4846FF0D2AB4ECFF7D1B68BC367D5E855D24D37E1BC022"
+                  },
+                  {
+                      "file":  "2018-04-12.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "EA9A0D2253D2EF34BE994BC2FF5126FD98BFEA9A0810A1CD70CD5E6D069CB55E",
+                      "sha256_sumber":  "EA9A0D2253D2EF34BE994BC2FF5126FD98BFEA9A0810A1CD70CD5E6D069CB55E"
+                  },
+                  {
+                      "file":  "2018-04-13.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "6775BA253AD7602D7CB5A2EAF358C39351FE4022311DADE4DADBF932F6DB6CB7",
+                      "sha256_sumber":  "6775BA253AD7602D7CB5A2EAF358C39351FE4022311DADE4DADBF932F6DB6CB7"
+                  },
+                  {
+                      "file":  "2018-04-14.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "A7C4F570BE3E485B757B6EB5E04CF21F239A57289269F27F49A03E8387BE2044",
+                      "sha256_sumber":  "A7C4F570BE3E485B757B6EB5E04CF21F239A57289269F27F49A03E8387BE2044"
+                  },
+                  {
+                      "file":  "2018-04-15.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "9562E021001BA0ADBC7346872A6EB8119F88E6B15088C98D16D0194A9F44792E",
+                      "sha256_sumber":  "9562E021001BA0ADBC7346872A6EB8119F88E6B15088C98D16D0194A9F44792E"
+                  },
+                  {
+                      "file":  "2018-04-16.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "8D42941CD7E1FC8EA1C81DDD68259CA0DDE38754C70516CA5BB6D5142E42E068",
+                      "sha256_sumber":  "8D42941CD7E1FC8EA1C81DDD68259CA0DDE38754C70516CA5BB6D5142E42E068"
+                  },
+                  {
+                      "file":  "2018-04-17.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "AAAC96C9938195FBADDB2A3F40EC9E83A060554EA549C21BE91AA5FC24E83D7B",
+                      "sha256_sumber":  "AAAC96C9938195FBADDB2A3F40EC9E83A060554EA549C21BE91AA5FC24E83D7B"
+                  },
+                  {
+                      "file":  "2018-04-18.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "DCCFABCA4C3FBBD6A2142B02E94D5551BB54070D0525152840D760129692B745",
+                      "sha256_sumber":  "DCCFABCA4C3FBBD6A2142B02E94D5551BB54070D0525152840D760129692B745"
+                  },
+                  {
+                      "file":  "2018-04-19.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "8080A07AC1694A726DBEBF21D2D847046E53CEB1A2DD03A1A0450A93F1EF6EDB",
+                      "sha256_sumber":  "8080A07AC1694A726DBEBF21D2D847046E53CEB1A2DD03A1A0450A93F1EF6EDB"
+                  },
+                  {
+                      "file":  "2018-04-20.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "FB8658F89EDF3C8DCCA4326DA4F9196BF9C41D40E6311076B6BF143EC39BC75B",
+                      "sha256_sumber":  "FB8658F89EDF3C8DCCA4326DA4F9196BF9C41D40E6311076B6BF143EC39BC75B"
+                  },
+                  {
+                      "file":  "2018-04-21.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "E12C7C65B0F838762A4AB99900447992CB6F04C3D81A959833C344CA7F55ED02",
+                      "sha256_sumber":  "E12C7C65B0F838762A4AB99900447992CB6F04C3D81A959833C344CA7F55ED02"
+                  },
+                  {
+                      "file":  "2018-04-22.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "56008737B5ACADA58D598F458FEDF0C03652E6B9829ECC69F3E459872B71B30F",
+                      "sha256_sumber":  "56008737B5ACADA58D598F458FEDF0C03652E6B9829ECC69F3E459872B71B30F"
+                  },
+                  {
+                      "file":  "2018-04-23.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "48F65C62174EB75A291B4B0CEE28E98A6C22DC228242207766C3BEBBB33B66DB",
+                      "sha256_sumber":  "48F65C62174EB75A291B4B0CEE28E98A6C22DC228242207766C3BEBBB33B66DB"
+                  },
+                  {
+                      "file":  "2018-04-24.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "6EE0691D43914334119401BECDBF5B8B24A34FA117D83727958716B288B01C77",
+                      "sha256_sumber":  "6EE0691D43914334119401BECDBF5B8B24A34FA117D83727958716B288B01C77"
+                  },
+                  {
+                      "file":  "2018-04-25.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "25FE5846F1A34C6433A064C0CAC9515433012B21D3FE3B54442B74481279F07D",
+                      "sha256_sumber":  "25FE5846F1A34C6433A064C0CAC9515433012B21D3FE3B54442B74481279F07D"
+                  },
+                  {
+                      "file":  "2018-04-26.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "DB612645D1FDF2B7456C759C9C3B1F5DB8CF64C5ACDD736C560EC1F6907DB1F8",
+                      "sha256_sumber":  "DB612645D1FDF2B7456C759C9C3B1F5DB8CF64C5ACDD736C560EC1F6907DB1F8"
+                  },
+                  {
+                      "file":  "2018-04-27.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "C70254F03BC10D8DA37F500F99D6ABEBA75B2EA92C62F8F0545B2360D28CF617",
+                      "sha256_sumber":  "C70254F03BC10D8DA37F500F99D6ABEBA75B2EA92C62F8F0545B2360D28CF617"
+                  },
+                  {
+                      "file":  "2018-04-28.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "2CE3591A66DF34B8852C1CDB2EC200F4569E7489EA31C481E71E7CF120F23DAB",
+                      "sha256_sumber":  "2CE3591A66DF34B8852C1CDB2EC200F4569E7489EA31C481E71E7CF120F23DAB"
+                  },
+                  {
+                      "file":  "2018-04-29.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "7AA5D6CC838B4C1610303D3DFFE2ACA91221A272AC7D9E7827AB50D8F9B233A7",
+                      "sha256_sumber":  "7AA5D6CC838B4C1610303D3DFFE2ACA91221A272AC7D9E7827AB50D8F9B233A7"
+                  },
+                  {
+                      "file":  "2018-04-30.pkl",
+                      "cocok":  true,
+                      "sha256_lokal":  "50E35C707EA8C47731F78E1D4A12C15EA4C283F66858645CD43A842B870A664B",
+                      "sha256_sumber":  "50E35C707EA8C47731F78E1D4A12C15EA4C283F66858645CD43A842B870A664B"
+                  }
+              ]
+}
