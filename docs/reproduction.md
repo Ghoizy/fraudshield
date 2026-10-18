@@ -352,3 +352,28 @@ They generate files outside the `history_v1` pipeline and are not
 prerequisites for the seven steps above.
 
 Their reports remain useful as part of the experiment history.
+
+## Application verification after local rebuild
+
+Verification date: October 18, 2026.
+
+The automated test suite completed in the separate
+fraudshield-rebuild project:
+
+- Tests run: 32.
+- Result: OK.
+- Reported duration: 1.907 seconds.
+
+The rebuilt application started successfully on port 8001.
+Its /health endpoint returned HTTP 200 with:
+
+- status: ready
+- model_version: fraudshield-v1
+- policy_version: review-policy-v1
+
+A StarletteDeprecationWarning concerning the TestClient
+HTTP dependency was observed. It did not fail the test run.
+
+These results verify the tested behavior in the local rebuild
+environment. They do not establish production readiness or
+cross-platform reproducibility.
