@@ -405,3 +405,76 @@ files and the upstream files at the recorded commit.
 
 Evidence:
 [Dataset source verification](../reports/dataset_source_verification.json)
+
+## Download the verified dataset
+
+Run these commands in PowerShell from the project root.
+Git and Python are not required for this download step.
+
+The verification report must be available at:
+`reports/dataset_source_verification.json`.
+
+```powershell
+& {
+    $ErrorActionPreference = "Stop"
+
+    $report = Get-Content ".\reports\dataset_source_verification.json" -Raw |
+        ConvertFrom-Json
+
+    $commit = "6e67dbd0a3bfe0d7ec33abc4bce5f37cd4ff0d6a"
+
+    if ($report.source_commit -ne $commit) {
+        throw "The verification report references a different source commit."
+    }
+
+    New-Item -ItemType Directory -Path ".\data\raw" -Force |
+        Out-Null
+
+    $startDate = Get-Date -Year 2018 -Month 4 -Day 1
+
+    for ($day = 0; $day -lt 30; $day++) {
+        $name = $startDate.AddDays($day).ToString("yyyy-MM-dd") + ".pkl"
+        $destination = Join-Path ".\data\raw" $name
+
+        $entry = @($report.files | Where-Object { $_.file -eq $name })
+
+        if ($entry.Count -ne 1) {
+            throw "Missing or duplicate verification entry: $name"
+        }
+
+        if (-not (Test-Path -LiteralPath $destination)) {
+            $url = "https://raw.githubusercontent.com/Fraud-Detection-Handbook/simulated-data-raw/$commit/data/$name"
+
+            Invoke-WebRequest -Uri $url -OutFile $destination -TimeoutSec 60
+        }
+
+        $actualHash = (
+            Get-FileHash -LiteralPath $destination -Algorithm SHA256
+        ).Hash
+
+        if ($actualHash -ne $entry[0].sha256_sumber) {
+            throw "SHA-256 mismatch: $name. Stop and inspect the file."
+        }
+
+        Write-Host "VERIFIED: $name"
+    }
+
+    Write-Host "All 30 April 2018 files are available and verified."
+}
+```
+
+Existing files are checked and are not overwritten.
+Missing files are downloaded from the pinned upstream commit.
+
+If a download fails or a hash does not match, stop before
+running the data-processing pipeline. A partial download may
+need to be removed before retrying that individual file.
+
+Expected final output:
+
+```text
+All 30 April 2018 files are available and verified.
+```
+
+After verification, follow the environment setup and pipeline
+steps in this document.
