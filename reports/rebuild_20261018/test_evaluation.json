@@ -1,0 +1,66 @@
+{
+  "evaluation_split": "test",
+  "evaluation_scope": "internal_april_2018",
+  "model_version": "fraudshield-v1",
+  "candidate": "logistic_basic",
+  "threshold": 0.05,
+  "test_start": "2018-04-25",
+  "test_end_exclusive": "2018-05-01",
+  "daily_review_capacity_assumption": 100,
+  "selection_sha256": "56cfce67733813a2b5572b9133bac968d401018dded3f97b0539464786dbcc5e",
+  "model_sha256": "ecff4d06a35aeeaa4211cf3e5a408ffcbcb5dfaa9f433e39e91b5142ce81742b",
+  "test_data_sha256": "dcda0c9ddb4c21e823c52ff4b0a2e246a0264ddbdf2ac8fb67322afbac9f90a4",
+  "predictions_sha256": "1a7dc2fa0480754de3f907f60217fb0b07ef3a96f6b01f2ffcb235c69b8e2448",
+  "validation_metrics": {
+    "tp": 123,
+    "fp": 266,
+    "fn": 336,
+    "total_review": 389,
+    "max_review_harian": 71,
+    "hari_melebihi_100": 0,
+    "precision": 0.3161953727506427,
+    "recall": 0.2679738562091503,
+    "ap_validation": 0.27204603820502304
+  },
+  "test_metrics": {
+    "jumlah_transaksi": 57767,
+    "jumlah_fraud": 526,
+    "threshold": 0.05,
+    "average_precision": 0.2728602084917219,
+    "precision": 0.3898305084745763,
+    "recall": 0.2623574144486692,
+    "tp": 138,
+    "fp": 216,
+    "fn": 388,
+    "tn": 57025,
+    "total_review": 354,
+    "max_review_harian": 70,
+    "hari_melebihi_kapasitas": 0
+  },
+  "daily_reviews": [
+    {
+      "tanggal": "2018-04-25",
+      "jumlah_review": 62
+    },
+    {
+      "tanggal": "2018-04-26",
+      "jumlah_review": 58
+    },
+    {
+      "tanggal": "2018-04-27",
+      "jumlah_review": 54
+    },
+    {
+      "tanggal": "2018-04-28",
+      "jumlah_review": 57
+    },
+    {
+      "tanggal": "2018-04-29",
+      "jumlah_review": 53
+    },
+    {
+      "tanggal": "2018-04-30",
+      "jumlah_review": 70
+    }
+  ]
+}

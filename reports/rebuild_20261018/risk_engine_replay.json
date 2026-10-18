@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-18T12:33:42.124255+00:00",
+  "model_version": "fraudshield-v1",
+  "policy_version": "review-policy-v1",
+  "threshold": 0.05,
+  "jumlah_transaksi": 57767,
+  "jumlah_skor_berbeda": 0,
+  "jumlah_keputusan_berbeda": 0,
+  "selisih_skor_terbesar": 8.326672684688674e-17,
+  "durasi_detik": 142.363,
+  "score_tolerance": {
+    "relative": 1e-10,
+    "absolute": 1e-12
+  },
+  "test_data_sha256": "dcda0c9ddb4c21e823c52ff4b0a2e246a0264ddbdf2ac8fb67322afbac9f90a4",
+  "predictions_sha256": "1a7dc2fa0480754de3f907f60217fb0b07ef3a96f6b01f2ffcb235c69b8e2448",
+  "selection_sha256": "56cfce67733813a2b5572b9133bac968d401018dded3f97b0539464786dbcc5e",
+  "risk_engine_code_sha256": "def12386d196d7f18975412a59df8514bdc2b15b290922b6ecd56fcdcf02b560",
+  "contoh_perbedaan": []
+}

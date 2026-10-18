@@ -6,7 +6,20 @@ This guide describes the script sequence from existing April 2018
 raw transaction files to the frozen model used by FraudShield.
 
 The sequence has been checked against the source code.
-A complete rebuild in a separate project copy remains to be verified.
+A rebuild was completed in a separate local project copy on
+October 18, 2026, using the existing April 2018 raw dataset.
+
+The reported internal test metrics matched the reference evaluation.
+Risk engine replay passed for all 57,767 test transactions, with zero
+score mismatches beyond tolerance and zero decision mismatches.
+
+This verifies a local rebuild using the available raw data.
+It does not verify dataset acquisition on a fresh machine or
+cross-platform reproducibility.
+
+Rebuild evidence:
+- [Test evaluation](../reports/rebuild_20261018/test_evaluation.json)
+- [Risk engine replay](../reports/rebuild_20261018/risk_engine_replay.json)
 
 This guide assumes the raw data is already available.
 Dataset acquisition and redistribution instructions are still pending.
