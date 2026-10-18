@@ -278,6 +278,7 @@ It does not guarantee identical behavior across operating systems.
 - [Operating guide](docs/runbook.md)
 - [Validation model comparison](reports/history_v1/model_comparison_validation.json)
 - [System architecture](docs/architecture.md)
+- [Local API demo](docs/demo.md)
 
 ## Limitations and Remaining Work
 
