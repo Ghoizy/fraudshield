@@ -21,8 +21,14 @@ Rebuild evidence:
 - [Test evaluation](../reports/rebuild_20261018/test_evaluation.json)
 - [Risk engine replay](../reports/rebuild_20261018/risk_engine_replay.json)
 
-This guide assumes the raw data is already available.
-Dataset acquisition and redistribution instructions are still pending.
+If the raw files are not yet available, follow
+[Download the verified dataset](#download-the-verified-dataset)
+before running Step 1.
+
+The download instructions use a pinned upstream commit and verify
+each file against the recorded SHA-256 hash.
+
+Dataset license and redistribution review remain pending.
 
 ## Prerequisites
 
@@ -328,30 +334,100 @@ CHECKPOINT 8A SELESAI
 The script hashes the test dataset to record its identity.
 It does not calculate test performance or use test labels for selection.
 
-## Completion and Next Checks
+## Step 8: Evaluate the Frozen Model
 
-The frozen artifacts are the model files required by the API.
+Run this step only after successfully completing Step 7
+in the separate rebuild copy.
 
-A successful freeze does not, by itself, verify:
-- Agreement with the reference internal test results.
-- Batch-versus-risk-engine replay consistency.
-- API and storage behavior.
+The repository includes reference evaluation reports.
+Preserve them before generating new evaluation results:
 
-Those checks follow the rebuild.
+```powershell
+if (Test-Path ".\reports\frozen_v1") {
+    if (Test-Path ".\reports\reference_frozen_v1") {
+        throw "Reference backup already exists. Inspect both report folders before proceeding."
+    }
 
-Rebuilt file hashes may differ because of serialization, environment,
-or metadata such as creation timestamps. Compare model behavior and
-metrics as well as recording file identity.
+    Move-Item -Path ".\reports\frozen_v1" -Destination ".\reports\reference_frozen_v1"
+}
+```
 
-## Earlier Baseline Experiments
+This moves reports within the rebuild copy.
+It does not move or delete the frozen model.
 
-`split_dataset.py` and `train_baseline.py` belong to the earlier
-baseline experiment.
+If the command reports an error, stop and inspect the folders
+before continuing.
 
-They generate files outside the `history_v1` pipeline and are not
-prerequisites for the seven steps above.
+Run the evaluation:
 
-Their reports remain useful as part of the experiment history.
+```powershell
+.\.venv\Scripts\python.exe src/evaluate_frozen_model.py
+```
+
+Outputs:
+
+- `reports/frozen_v1/test_evaluation.json`
+- `data/processed/frozen_v1/test_predictions.pkl`
+
+Compare the new metrics with the reference report.
+Matching results must be observed, not assumed.
+
+Reference results include:
+
+| Metric | Reference |
+|---|---:|
+| Transactions | 57,767 |
+| Fraudulent transactions | 526 |
+| Average Precision | 0.2728602084917219 |
+| True positives | 138 |
+| False positives | 216 |
+| False negatives | 388 |
+| True negatives | 57,025 |
+| Total REVIEW | 354 |
+| Maximum daily REVIEW | 70 |
+
+## Step 9: Verify Risk Engine Consistency
+
+After the evaluation completes successfully:
+
+```powershell
+.\.venv\Scripts\python.exe src/replay_risk_engine.py
+```
+
+Output:
+
+`reports/frozen_v1/risk_engine_replay.json`
+
+Expected reference behavior:
+
+- Status: PASS.
+- Transactions checked: 57,767.
+- Score mismatches beyond tolerance: 0.
+- Decision mismatches: 0.
+
+Replay checks agreement with saved batch predictions.
+It is not an HTTP API load test.
+
+## Step 10: Run Application Tests
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -p "test_*.py" -v
+```
+
+The verified rebuild ran 32 tests and finished with `OK`.
+Execution time may vary.
+
+After the tests pass, follow the
+[local API demo](demo.md) to start the service and send requests.
+
+## Interpreting Rebuild Results
+
+Rebuilt artifact hashes may differ because of serialization,
+environment differences, or metadata such as creation timestamps.
+
+Record file identity and compare model behavior and evaluation
+metrics. Do not claim identical results solely because the scripts
+completed without errors.
 
 ## Application verification after local rebuild
 

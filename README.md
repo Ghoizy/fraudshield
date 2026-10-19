@@ -25,7 +25,15 @@ Implemented:
 - Command-line decision inspection and monitoring.
 - Automated tests for the risk engine, API, and storage components.
 
-Documentation and fresh-clone reproduction instructions are being finalized.
+A rebuild in a separate local project copy reproduced the reported
+internal test metrics and passed risk engine replay checks.
+All 32 automated tests passed in that rebuild environment.
+
+All 30 April 2018 raw files were verified against a pinned upstream
+commit using SHA-256 hashes.
+
+Reproduction and local API demo instructions are available.
+A complete fresh-machine walkthrough has not yet been verified.
 
 ## Business Problem
 
@@ -202,7 +210,10 @@ Run commands from the project root.
 
 A fresh clone does not include the ignored model and data artifacts.
 Dependency installation alone is not sufficient to run the API.
-A complete artifact acquisition and rebuild guide is pending.
+
+Follow the [reproduction guide](docs/reproduction.md) to download
+the verified dataset and build the frozen model artifacts.
+See the [local API demo](docs/demo.md) for scoring and replay examples.
 
 Start the API:
 
@@ -279,6 +290,8 @@ It does not guarantee identical behavior across operating systems.
 - [Validation model comparison](reports/history_v1/model_comparison_validation.json)
 - [System architecture](docs/architecture.md)
 - [Local API demo](docs/demo.md)
+- [Reproduction guide](docs/reproduction.md)
+- [Dataset source verification](reports/dataset_source_verification.json)
 
 ## Limitations and Remaining Work
 
@@ -290,5 +303,5 @@ It does not guarantee identical behavior across operating systems.
 - Authentication, production load testing, and deployment hardening
   are outside the current implementation.
 - A review dashboard and automatic blocking are not implemented.
-- Fresh-clone reproduction instructions and dataset redistribution
-  requirements still need to be finalized.
+- The complete documented workflow has not yet been verified on a fresh machine.
+- Dataset license and redistribution review remain pending.

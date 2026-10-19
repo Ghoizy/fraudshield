@@ -119,6 +119,12 @@ Pemeriksaan ini bukan pengujian beban atau jaminan performa produksi.
 
 ## Lokasi Bukti
 
-- Pemilihan model: models/frozen_v1/selection.json
-- Evaluasi test: reports/frozen_v1/test_evaluation.json
-- Konsistensi engine: reports/frozen_v1/risk_engine_replay.json
+- [Perbandingan dan rekomendasi model pada validation](../reports/history_v1/model_comparison_validation.json)
+- [Evaluasi internal test](../reports/frozen_v1/test_evaluation.json)
+- [Konsistensi risk engine](../reports/frozen_v1/risk_engine_replay.json)
+- [Verifikasi sumber dataset](../reports/dataset_source_verification.json)
+- [Panduan reproduksi](reproduction.md)
+
+Konfigurasi model yang dibekukan tersedia secara lokal di
+`models/frozen_v1/selection.json` setelah pipeline dijalankan.
+Folder `models/` tidak disertakan dalam repository Git.
