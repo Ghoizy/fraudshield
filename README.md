@@ -292,6 +292,7 @@ It does not guarantee identical behavior across operating systems.
 - [Local API demo](docs/demo.md)
 - [Reproduction guide](docs/reproduction.md)
 - [Dataset source verification](reports/dataset_source_verification.json)
+- [Data sources and attribution](docs/data_sources.md)
 
 ## Limitations and Remaining Work
 
